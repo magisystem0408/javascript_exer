@@ -107,3 +107,39 @@ arry.reduce(function(accu,curr){
 // 3 3
 // 6 4
 // 10 5
+
+// 10は1ループ目のaccuに渡ってくることになる
+arry.reduce(function(accu,curr){
+    console.log(accu,curr);
+    return accu+curr;
+},10);
+
+const str ='animation';
+const strArry =str.split('');
+console.log(strArry)
+
+// 実行結果
+//     [
+//     'a', 'n', 'i',
+//         'm', 'a', 't',
+//         'i', 'o', 'n'
+//     ]
+
+
+const str ='Animation';
+const strArry =str.split('');
+
+function tag(accu,curr){
+    return `${accu}<${curr}>`;
+}
+
+function reduce(arry,callback,defaultValue){
+    let accu =defaultValue;
+    for (let i=0; i<arry.length;i++){
+        let curr =arr[i];
+        accu = callback(accu,curr);
+    }
+    result accu;
+}
+const result =reduce(strArry,tag,"");
+console.log(result);
