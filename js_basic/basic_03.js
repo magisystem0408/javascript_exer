@@ -52,3 +52,58 @@ doSomething(2,2,mltiply)
 doSomething(2,3,plus)
 // 実行結果
 // 5
+
+
+// コールバック関数
+const arry = [1,2,3,4,5];
+
+function forEach(ary,callback){
+    for(let i=0; i<ary.length;i++){
+       callback(ary[i]);
+    }
+}
+function log(val){
+    console.log(val);
+}
+
+function double(val){
+    val =val*2;
+    log(val);
+}
+
+forEach(arry,log);
+forEach(arry,double);
+
+// forEachメソッドを作る
+const arry = [1,2,3,4,5];
+
+// 第二引数にはindexが
+// 第三引数には配列そのものが入ってくる
+arry.forEach(function(val,i,ary){
+    console.log(val,i,ary);
+});
+
+// 実行結果
+// 1 0 [ 1, 2, 3, 4, 5 ]
+// 2 1 [ 1, 2, 3, 4, 5 ]
+// 3 2 [ 1, 2, 3, 4, 5 ]
+// 4 3 [ 1, 2, 3, 4, 5 ]
+// 5 4 [ 1, 2, 3, 4, 5 ]
+
+// 上のforeachのvalをアロー関数で書き直した場合
+arry.forEach(v => console.log(v));
+
+
+// reduceメソッドは配列の中身をいじるときに使う
+const arry = [1,2,3,4,5];
+
+arry.reduce(function(accu,curr){
+    console.log(accu,curr);
+    return accu+curr;
+});
+
+// 実行結果
+// 1 2
+// 3 3
+// 6 4
+// 10 5
