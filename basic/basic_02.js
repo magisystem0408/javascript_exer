@@ -30,8 +30,6 @@ for(let v of arry){
 // 3
 // 4
 // 5
-
-
 const todos =[
     {
         id:1,
@@ -75,3 +73,41 @@ for(let todo in todos){
 // { id: 1, title: 'gotmamushi', completed: true }
 // { id: 2, title: 'gotmamushi', completed: true }
 // { id: 3, title: 'gotmamushi', completed: true }
+
+// if文
+
+if(false){
+    console.log('this is true')
+}else if(true){
+    console.log('this is false')
+}
+
+// 関数定義
+function hello(){
+    console.log('hello');
+}
+
+hello('code mafia');
+
+function hello(name ='Tom'){
+    console.log('hello'+name)
+}
+hello();
+
+// アロー関数での記述方法
+const hello = (name ='Tom') => console.log('hello' +name )
+
+// これは戻り値が40という意味
+const hello =(name,age) => 40;
+
+
+
+// 通常で書いた場合
+const arry =[1,2,3,4,5];
+arry.forEach(function(value){
+    console.log(value);
+})
+
+// アロー関数で書いた場合
+arry.forEach(value => console.log(value));
+
