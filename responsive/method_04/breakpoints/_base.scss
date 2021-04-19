@@ -1,0 +1,49 @@
+//共通クラスを定義してあげる
+ //個別にフォントの設定をしないようにする
+.font-sm{
+  font-size:14px;
+}
+
+.font-md{
+  font-size:17px;
+}
+
+.font-lr{
+  font-size:17px;
+}
+
+.font-lg{
+  font-size:25px;
+}
+
+
+//余白の設定
+//!importantは重要度をあげるという意味
+
+// margin-bottom
+.mb-sm{
+  margin-bottom:16px !important;
+}
+.mb-lg{
+  margin-bottom:80px !important;
+}
+
+//padding-bottom
+.pd-sm{
+  padding-bottom:16px !important;
+}
+
+.pd-lg{
+  padding-bottom:80px !important;
+}
+
+//左右余白を揃える
+
+.content-width{
+  //画面の横幅に対して90%で表示される
+  width: 90%;
+  //中央揃えになる
+  margin:0 auto;
+  //画面が広がってコンテンツが広がりすぎないようにする最大値を設定してあげている
+  max-width: 1070px;
+}

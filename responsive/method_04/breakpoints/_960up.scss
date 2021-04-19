@@ -1,0 +1,32 @@
+//共通クラスを定義してあげる
+//フォントサイズが少し上がるようにする
+.font-sm{
+  font-size:16px;
+}
+
+.font-md{
+  font-size:19px;
+}
+
+.font-lr{
+  font-size:23px;
+}
+
+.font-lg{
+  font-size:36px;
+}
+
+
+//余白の設定
+//!importantは重要度をあげるという意味
+
+//largeのpaddingを設定したものは2倍近くになる
+// margin-bottom
+.mb-lg{
+  margin-bottom:80px !important;
+}
+
+//padding-bottom
+.pd-lg{
+  padding-bottom:80px !important;
+}
