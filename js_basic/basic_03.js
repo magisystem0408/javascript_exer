@@ -139,7 +139,7 @@ function reduce(arry,callback,defaultValue){
         let curr =arr[i];
         accu = callback(accu,curr);
     }
-    result accu;
+    return accu;
 }
 const result =reduce(strArry,tag,"");
 console.log(result);
