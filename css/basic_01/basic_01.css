@@ -1,2 +1,30 @@
 /*角を丸みをつける*/
 border-radius 左上　右上　右下　左下
+
+
+
+
+body{
+
+    /*背景の処理について*/
+
+    /*背景に画像をつけるとき*/
+    background-image: url(_img/codye.png);
+
+
+    /*画像の繰り返しをどうするか*/
+
+    /*repeat：縦横ともに繰り返して表示*/
+    /*repeat-x：横方向に繰り返して表示*/
+    /*repeat-y：縦方向に繰り返して表示*/
+    /*no-repeat：繰り返さない*/
+    background-repeat:repeat-x;
+
+    /*表示領域を埋め尽くすように表示の指定になる*/
+    background-size: cover;
+
+
+    /*画像比率を保持したまま、画像が全て表示されるように表示される*/
+    /*ただし、表示領域が画像より大きい場合は余白ができる*/
+    background-size: contain;
+}
