@@ -1,0 +1,28 @@
+.btn {
+  display: block;
+}
+.btn.red {
+  background: red;
+}
+.btn.green {
+  background: #007bff;
+}
+
+body#top aside {
+  width: 300px;
+}
+
+.block {
+  width: 400px;
+}
+.block .block__element {
+  margin-bottom: 20px;
+}
+
+div.border-box {
+  border-top: 2px solid #fff;
+  border-bottom-width: 5px;
+  border-bottom-style: dotted;
+}
+
+/*# sourceMappingURL=basic01.css.map */

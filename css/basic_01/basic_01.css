@@ -27,4 +27,17 @@ body{
     /*画像比率を保持したまま、画像が全て表示されるように表示される*/
     /*ただし、表示領域が画像より大きい場合は余白ができる*/
     background-size: contain;
+
+
+}
+/*擬似セレクター*/
+/*::beforeは直前に要素を追加する*/
+p::before {
+    content:"mamushi";
+}
+
+
+/*::afterは直後に要素を追加する*/
+p::after{
+    content: "hello";
 }

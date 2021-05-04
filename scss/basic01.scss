@@ -1,0 +1,40 @@
+//親セレクタの参照
+.btn{
+  display: block;
+  &.red{
+    background: red;
+  }
+  &.green{
+    background: #007bff;
+  }
+}
+
+//cssで
+// body#top asideを書きたい時
+aside{
+  body#top &{
+    width: 300px;
+  }
+}
+
+
+//&&を二回入れることも可能
+
+.block{
+  width: 400px;
+  & &__element{
+    margin-bottom: 20px;
+  }
+}
+
+//プロパティのネスト
+
+div.border-box{
+  border: {
+    top: 2px solid #fff;
+    bottom:{
+      width: 5px;
+      style: dotted;
+    }
+  };
+}
