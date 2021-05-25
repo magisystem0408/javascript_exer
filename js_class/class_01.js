@@ -3,11 +3,21 @@ class TextAnimation{
     constructor(el){
         //__init__と同様
         this.el = document.querySelector(el);
+        this.product =[el]
     }
+    // functionは不要で描ける
     animate(){
         this.el.classList.toggle('inview');
     }
+    addProduct(item){
+        // 配列の場合はpushになる
+        this.product.push(item)
+    }
 }
+
+const text_animation =new TextAnimation('test');
+console.log(text_animation.animate);
+
 
 // extendsの後ろに継承先をかく
 
@@ -25,9 +35,3 @@ class TextAnimation2 extends TextAnimation {
 
 
 
-    // filter関数
-const score =[10,20,30,40];
-const newScores = score.filter((value)=>value >=30);
-console.log(newScores)
-// 実行結果
-// [ 30, 40 ]

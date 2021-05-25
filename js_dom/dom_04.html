@@ -1,0 +1,48 @@
+<!--イベント指定について-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .red{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="test"></div>
+  <button id="target" onclick="change_color()">押すな</button>
+
+  <div id="test2"></div>
+  <button id="target2">押すな</button>
+
+  <div id="test3"></div>
+  <button id="target3">押すな</button>
+
+  <script>
+      // html側でonclick設定
+    function change_color() {
+        const test = document.getElementById('test')
+        test.textContent = 'テスト'
+        test.classList.add('red');
+    }
+
+      // JS側でElement.onclickを設定___上書きが一つだけ
+    document.getElementById('target2').onclick =function (){
+        const test1 =document.getElementById('test2');
+        test1.textContent ='テスト';
+        test1.classList.add('red');
+    };
+
+    //3つめイベントリスナー__第二引数はコールバック関数で書くよん
+    target.addEventListener('click',()=>{
+        const test2 =document.getElementById('test3');
+        test2.textContent='テスト';
+        test2.classList.add('red');
+    });
+
+
+  </script>
+</body>
+</html>

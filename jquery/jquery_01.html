@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<ul id="food">
+  <li id="apple" class="fruits">りんご</li>
+  <li id="grape" class="fruits">ぶどう</li>
+  <li id="calot" class="vegetable">にんじん</li>
+    <li>
+        <ul>
+            <li class="fruits">もも</li>
+        </ul>
+        <ul id="animal">
+            <li class="meat">フライドチキン</li>
+            <li class="meat">ステーキ</li>
+            <li class="fish">刺身</li>
+        </ul>
+    </li>
+</ul>
+<script>
+    // 指定してcssをつける
+    // $(function (){
+    //     $('#apple').css('color','red');
+    //     $('#grape').css('color','purple');
+    //     $('#calot').css('color','orange');
+    //     $('.fruits').css('font-size','60px');
+    // })
+
+    // 不等号で直下の要素のみを指定できる
+    // $(function (){
+    //     $('#food>.fruits').css('font-size','20px');
+    // })
+
+    // 空白　先に指定した要素内(#food)の要素(.fruits)なら全てにかかる
+    // $(function (){
+    //     $('#food .fruits').css('font-size','40px');
+    // })
+
+    // カンマ　複数の物を指定する
+    $('.fruits,.meat').css('color','red');
+
+</script>
+
+</body>
+</html>
