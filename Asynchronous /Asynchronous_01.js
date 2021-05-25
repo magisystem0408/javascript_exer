@@ -44,7 +44,7 @@ const getGitUsername = () =>{
     return new Promise((resolve, reject) =>{
         const url ='https://api.github.com/users/magisystem0408'
 
-        fetch(url).then(res => res.json())
+            fetch(url).then(res => res.json())
             .then(json =>{
                 console.log('これは非同期処理成功時のメッセージ')
                 return resolve(json.login)
@@ -52,7 +52,6 @@ const getGitUsername = () =>{
                 console.error('これは非同期処理失敗例のメッセージ',error)
                 return  reject(null)
         })
-
     })
 }
 

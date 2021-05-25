@@ -1,5 +1,6 @@
 // 非同期処理を伴う関数定義にasync
 // 非同期処理を伴う関数実行時にawaitをつける
+const fetch =require("node-fetch");
 
 const asyncAwaitFunc = async() =>{
     const hoge =await someAsynchronousFunc(()=>{

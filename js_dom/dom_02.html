@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+<div id="test" class="">
+    <ul>
+        <li class="test_list">テストだひょーん</li>
+        <li>テストだひょーん</li>
+        <li>テストだひょーん</li>
+    </ul>
+</div>
+
+<div id="mamushi">
+    チミマムシ論法
+</div>
+
+<input type="text" id="test_mamushi">
+
+<script>
+    // 特定の要素を取得する
+    const test = document.getElementById('test')
+    const test_list = document.querySelector(".test_list")
+
+    // console.log(test)
+    // console.log(test_list)
+
+    // 特定の要素を付け加えたりする
+
+    test.classList.add("red")
+    //これらを1行で描けるようにする
+    const testlist2=document.getElementById('mamushi').classList.add("blue")
+
+    const input =document.getElementById('test_mamushi');
+
+    // 属性の追加
+    // input.type='text'
+    input.placeholder = 'おまえマムシになるよ？'
+
+    // setattributeを使用しての属性追加
+    input.setAttribute('type','test')
+    // console.log(input)
+
+    // タグの作成
+    const anchor =document.createElement('a');
+    anchor.href="https://www.udemy.com/course/js-beginner/learn/lecture/18419062#overview";
+    anchor.textContent="timinekoニャンコ"
+
+    // 別のタグで開く
+    anchor.target='_blank';
+    console.log(anchor)
+
+</script>
+
+</body>
+</html>

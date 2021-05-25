@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="grand-father">
+    <div id="parent">
+        <div id="target">
+
+        </div>
+    </div>
+    <div id="divList">
+        <div class="div1">テスト1</div>
+        <div class="div2">テスト2</div>
+        <div class="div3">テスト3</div>
+    </div>
+</div>
+
+<script>
+    const target = document.getElementById('target');
+    const newDiv = document.createElement('div');
+    newDiv.id = 'test';
+    newDiv.classList.add('red');
+    newDiv.textContent='テスト';
+
+
+    // !appendChildに追加すると必ず最後に追加される
+    // クラスの追加
+    target.appendChild(newDiv);
+    // 親要素に上がってからnewDivを付け加える
+    target.parentNode.appendChild(newDiv)
+
+
+    // 追加する場所を指定して追加したい時は
+    const targetList =document.getElementById('divList');
+    const reference =document.querySelector('.div2');
+    const newElement =document.createElement('div');
+    newElement.classList.add('div4');
+    newElement.textContent='追加分';
+
+    // 新しく追加したタグと入れたい順番を第二引数入れる
+    targetList.insertBefore(newElement,reference)
+
+
+
+</script>
+
+</body>
+</html>

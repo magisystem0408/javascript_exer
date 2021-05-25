@@ -25,4 +25,19 @@ div.border-box {
   border-bottom-style: dotted;
 }
 
-/*# sourceMappingURL=basic01.css.map */
+.block .element {
+  width: 80px;
+}
+.element2 {
+  width: 1000px;
+}
+
+.element3 {
+  width: 1000px;
+}
+
+.calc {
+  width: 408px;
+}
+
+/*# sourceMappingURL=basic.css.map */

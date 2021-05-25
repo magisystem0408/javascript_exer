@@ -38,3 +38,42 @@ div.border-box{
     }
   };
 }
+
+
+//親要素を消すことができる@at-root
+
+.block{
+  .element{
+    width: 80px;
+  }
+
+  @at-root {
+    .element2 {
+      width: 1000px;
+    }
+
+    .element3{
+      width: 1000px;
+    }
+  }
+}
+
+//実行結果
+//.block .element {
+//  width: 80px;
+//}
+//.element2 {
+//  width: 1000px;
+//}
+
+//ローカル変数を定義できる
+footer{
+  $value:29px;
+}
+
+//演算
+.calc{
+  width: 400px+8px;
+}
+
+
