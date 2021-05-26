@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<table>
+  <colgroup>
+    <col span="1" style="background-color:#ffebeb;padding: 1em ">
+    <col span="5" style="background-color:#fafafa;padding: 1em ">
+    <col span="1" style="background-color:#f3fdff;padding: 1em ">
+  </colgroup>
+  <caption>2017/01</caption>
+  <tr class="week">
+    <td style="padding: 1em;">日</td>
+    <td style="padding: 1em;">月</td>
+    <td style="padding: 1em;">火</td>
+    <td style="padding: 1em;">水</td>
+    <td style="padding: 1em;">木</td>
+    <td style="padding: 1em;">金</td>
+    <td style="padding: 1em;">土</td>
+  </tr>
+  <tr class="days">
+    <td style="padding: 1em;">1</td>
+    <td style="padding: 1em;">2</td>
+    <td style="padding: 1em;">3</td>
+    <td style="padding: 1em;">4</td>
+    <td style="padding: 1em;">5</td>
+    <td style="padding: 1em;">6</td>
+    <td style="padding: 1em;">7</td>
+  </tr>
+  <tr class="days">
+    <td style="padding: 1em;">8</td>
+    <td style="padding: 1em;">9</td>
+    <td style="padding: 1em;">10</td>
+    <td style="padding: 1em;">11</td>
+    <td style="padding: 1em;">12</td>
+    <td style="padding: 1em;">13</td>
+    <td style="padding: 1em;">14</td>
+  </tr>
+  <tr class="days">
+    <td style="padding: 1em;">15</td>
+    <td style="padding: 1em;">16</td>
+    <td style="padding: 1em;">17</td>
+    <td style="padding: 1em;">18</td>
+    <td style="padding: 1em;">19</td>
+    <td style="padding: 1em;">20</td>
+    <td style="padding: 1em;">21</td>
+  </tr>
+  <tr class="days">
+    <td style="padding: 1em;">22</td>
+    <td style="padding: 1em;">23</td>
+    <td style="padding: 1em;">24</td>
+    <td style="padding: 1em;">25</td>
+    <td style="padding: 1em;">26</td>
+    <td style="padding: 1em;">27</td>
+    <td style="padding: 1em;">28</td>
+  </tr>
+  <tr class="days">
+    <td style="padding: 1em;">29</td>
+    <td style="padding: 1em;">30</td>
+    <td style="padding: 1em;">31</td>
+    <td class="blankday"></td>
+    <td class="blankday"></td>
+    <td class="blankday"></td>
+    <td class="blankday"></td>
+  </tr>
+</table>
+<script>
+  $(function (){
+    // .children() 要素内にある全ての子要素を選択
+    // $('.days').children().css("color","red")
+
+    // nth-child() 要素内にある()内の数字番目の子要素を選択する
+    // $("td:nth-child(1)").css('color','red');
+    // $("td:nth-child(7)").css('color','blue');
+
+    // .parent() 　各要素の親要素を全て選択
+    // 28の週を全て選択
+    // $('td:contains(28)').parent().css("text-decoration"," underline")
+
+
+    // :next() 選択した要素の次の要素を指定
+    // :prev() 選択した要素の前の要素を指定
+    // $('td:contains(10)').next().css("color","red")
+    // $('td:contains(18)').prev().css("color","blue")
+
+    // .siblings() 選択した要素の兄弟関係にある全ての要素を指定
+
+    $('td:contains(17)').siblings().css('color',"red")
+  })
+</script>
+
+</body>
+</html>

@@ -81,6 +81,26 @@
             $("td:eq(6),td:eq(13),td:eq(20),td:eq(27),td:eq(34)").css("color","blue");
 
             //:first
+            $('.week >td:first').css("color","red");
+            $('.week >td:last').css("color","blue");
+
+            // :gt() ()内に書かれた引数より大きい物を表示する
+            $('td:gt(25)').css("font-size","20px");
+
+            // :lt() ()内に書かれた引数より小さい物を表示する
+            $('td:lt(16)').css("font-size","10px");
+
+            //:even　偶数
+            // $('.days >td:even').css('text-decoration',"underline");
+
+            //:odd 奇数
+            $('.days>td:odd').css('text-decoration',"underline");
+
+            //contains() 引数に渡された文字列を含む要素を指定する
+            $("td:contains(9)").css("color","green")
+
+
+
 
         })
     </script>
