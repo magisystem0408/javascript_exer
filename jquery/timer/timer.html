@@ -92,6 +92,21 @@
                 clearInterval(time);
                 $(this).prop("disabled",true);
                 $('#restart').removeAttr('disabled');
+            });
+
+            $('#restart').on('click',function (){
+                time =setInterval(countup,1000);
+                $(this).prop('disabled',true);
+                $('#stop').removeAttr("disabled")
+            })
+            $('#reset').on('click',function (){
+                sec=0;
+                min=0;
+                hour=0;
+                $("#timer").html('00:00:00');
+                clearInterval(time);
+                $('#stop,#reset,#restart').prop('disabled',true);
+                $('#start').removeAttr('disabled');
             })
 
         })

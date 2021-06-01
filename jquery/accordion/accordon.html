@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <title>Title</title>
+  <style>
+    ul.accrodion{
+      background: #eee;
+      width: 80%;
+      margin: 0 auto 30px;
+      padding: 10px;
+      font-size: 18px;
+    }
+    ul.accrodion a{
+      display: block;
+      padding: 10px;
+      background-position:97% center ;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    ul.accrodion span{
+      display: block;
+      padding: 10px;
+      background-position: 97%;
+        background-repeat: no-repeat;
+        color: #333;
+        font-weight: bold;
+    }
+
+    ul.accrodion ul{
+        display: none;
+    }
+    ul.accrodion >li{
+        background: -moz-linear-gradient(top,#c6f0fe,#27bcf9);
+        background: -webkit-gradient(linear,left top,left bottom,from(#c6f0fe),to(#27bcf9));
+    }
+    cul.accrodion > li >p{
+        background: -moz-linear-gradient(top,#c6f0fe,#27bcf9);
+        background: -webkit-gradient(linear,left top,left bottom,from(#c6f0fe),to(#27bcf9));
+    }
+
+
+
+  </style>
+</head>
+<body>
+    <h1>アコーディオン</h1>
+    <hr>
+    <ul class="accrodion">
+      <li>
+        <p><span>List：1</span></p>
+        <ul>
+          <li><a href="#">list1-1</a></li>
+          <li><a href="#">list1-2</a></li>
+          <li><a href="#">list1-3</a></li>
+        </ul>
+      </li>
+      <li>
+        <p><span>List：2</span></p>
+        <ul>
+          <li><a href="#">list2-1</a></li>
+          <li><a href="#">list2-2</a></li>
+          <li><a href="#">list2-3</a></li>
+        </ul>
+      </li>
+      <li>
+        <p><span>List：3</span></p>
+        <ul>
+          <li><a href="#">list3-1</a></li>
+          <li><a href="#">list3-2</a></li>
+          <li><a href="#">list3-3</a></li>
+        </ul>
+      </li>
+    </ul>
+</body>
+</html>
